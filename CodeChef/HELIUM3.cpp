@@ -14,8 +14,9 @@ void solve() {
     while (t--) {
         int a, b, x, y;
         cin >> a >> b >> x >> y;
-        int required = (a * b);
-        int taken = (x * y);
-        required <= taken ? cout << "YES\n" : cout << "NO\n";
+        if (a * b <= x * y)
+            cout << "Yes\n";
+        else
+            cout << "No\n";
     }
 }
