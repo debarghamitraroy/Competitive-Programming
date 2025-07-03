@@ -14,15 +14,9 @@ void solve() {
     while (t--) {
         int a, b;
         cin >> a >> b;
-        if (a == 0 && b == 0)
+        if (a > 0 && !(b % a))
+            cout << "Yes\n";
+        else
             cout << "No\n";
-        else if (a == 0 && b != 0)
-            cout << "No\n";
-        else {
-            if ((a + b) % a == 0)
-                cout << "Yes\n";
-            else
-                cout << "No\n";
-        }
     }
 }
